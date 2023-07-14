@@ -23,7 +23,7 @@ export class ProductController {
     return this.productService.getProductsByCategory(category);
   }
 
-  @Get('/product/:id')
+  @Get('product/:id')
   async getProductById(@Param('id') productId: string): Promise<Product> {
     return this.productService.getProductById(productId);
   }
